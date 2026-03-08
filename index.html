@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDWX1C8YE5"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CDWX1C8YE5');
+    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexander Kwesi · Copywriting portfolio</title>
+  <!-- Font & simple icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f8fafc;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.5;
+      color: #0f172a;
+      padding: 2rem 1.5rem;
+    }
+
+    .portfolio {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    /* header area */
+    .header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      background: linear-gradient(145deg, #0f172a, #334155);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.4rem;
+    }
+
+    .header .tagline {
+      font-size: 1.3rem;
+      color: #475569;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 1.2rem;
+      display: inline-block;
+      margin-top: 0.2rem;
+    }
+
+    .header .intro {
+      max-width: 650px;
+      margin: 1.5rem auto 0;
+      color: #334155;
+      font-size: 1.1rem;
+      background: #ffffffcc;
+      backdrop-filter: blur(4px);
+      padding: 1.2rem 2rem;
+      border-radius: 60px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    }
+
+    /* filter bar */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem 1.2rem;
+      margin-bottom: 3rem;
+    }
+
+    .filter-btn {
+      background: transparent;
+      border: none;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.5rem 1.2rem;
+      border-radius: 40px;
+      cursor: pointer;
+      color: #475569;
+      transition: 0.2s;
+      border: 1px solid transparent;
+    }
+
+    .filter-btn i {
+      margin-right: 6px;
+      font-size: 0.9rem;
+    }
+
+    .filter-btn:hover {
+      color: #0f172a;
+      background: #f1f5f9;
+    }
+
+    .filter-btn.active {
+      background: #0f172a;
+      color: white;
+      border-color: #0f172a;
+    }
+
+    /* project grid */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 2rem 1.8rem;
+      margin-top: 1rem;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 28px;
+      padding: 1.8rem 1.5rem 1.8rem 1.8rem;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.04), 0 2px 6px rgba(0,20,40,0.02);
+      transition: transform 0.2s, box-shadow 0.3s;
+      border: 1px solid rgba(226, 232, 240, 0.6);
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(2px);
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 24px 40px -12px rgba(0,35,70,0.18);
+      border-color: #cbd5e1;
+    }
+
+    .card-category {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      color: #3b82f6;
+      background: #eef2ff;
+      padding: 0.3rem 1rem 0.3rem 0.9rem;
+      border-radius: 40px;
+      width: fit-content;
+      margin-bottom: 1.2rem;
+      border: 1px solid #dbeafe;
+    }
+
+    .card-category i {
+      font-size: 0.8rem;
+    }
+
+    .project-title {
+      font-size: 1.7rem;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+      color: #0f172a;
+    }
+
+    .project-description {
+      color: #334155;
+      margin-bottom: 1.2rem;
+      font-size: 0.98rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #f8fafc;
+      padding: 0.4rem 1rem;
+      border-radius: 30px;
+      width: fit-content;
+    }
+
+    .project-description i {
+      color: #64748b;
+    }
+
+    .example-box {
+      background: #f1f5f9;
+      padding: 1.2rem 1.2rem 1rem 1.5rem;
+      border-radius: 18px;
+      margin: 1rem 0 1.2rem;
+      border-left: 4px solid #0f172a;
+      font-style: normal;
+      box-shadow: inset 0 1px 4px rgba(0,0,0,0.02);
+    }
+
+    .example-box .quote-icon {
+      color: #64748b;
+      font-size: 0.9rem;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .example-text {
+      font-size: 1rem;
+      color: #1e293b;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .example-text strong {
+      font-weight: 600;
+      color: #0f172a;
+      background: #e2e8f0;
+      padding: 0.1rem 0.3rem;
+      border-radius: 6px;
+    }
+
+    .project-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+      border-top: 1px dashed #d1d9e6;
+      padding-top: 1rem;
+      font-size: 0.9rem;
+      color: #62748c;
+    }
+
+    .project-footer span i {
+      margin-right: 5px;
+      color: #3b82f6;
+      width: 16px;
+    }
+
+    /* No result message */
+    .no-result {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 3rem;
+      background: #f1f4f9;
+      border-radius: 50px;
+      color: #475569;
+      font-size: 1.2rem;
+    }
+
+    /* footer */
+    .footer-note {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #94a3b8;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 2rem;
+    }
+
+    .footer-note a {
+      color: #1e293b;
+      text-decoration: none;
+      border-bottom: 1px dotted;
+    }
+  </style>
+</head>
+<body>
+  <div class="portfolio">
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Sam Rivera<span style="font-weight:300; color:#94a3b8;"> / copy</span></h1>
+      <div class="tagline">words that sell · stories that stick</div>
+      <div class="intro">
+        <i class="fas fa-pen-fancy" style="margin-right: 8px; color:#3b82f6;"></i>
+        Eight copywriting examples — from punchy ads to thoughtful long-form.
+        Each piece is <strong>my original work</strong> for real or sample projects.
+      </div>
+    </div>
+
+    <!-- FILTER BUTTONS (category filter) -->
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="all"><i class="fas fa-layer-group"></i> All work</button>
+      <button class="filter-btn" data-filter="brand"><i class="fas fa-tag"></i> Brand</button>
+      <button class="filter-btn" data-filter="digital"><i class="fas fa-laptop"></i> Digital</button>
+      <button class="filter-btn" data-filter="longform"><i class="fas fa-book-open"></i> Long‑form</button>
+      <button class="filter-btn" data-filter="social"><i class="fas fa-hashtag"></i> Social</button>
+    </div>
+
+    <!-- PROJECT GRID (all examples are my work) -->
+    <div class="project-grid" id="projectGrid">
+      <!-- 1. BRAND / tagline project -->
+      <div class="project-card" data-category="brand">
+        <div class="card-category"><i class="fas fa-bullseye"></i> brand voice</div>
+        <div class="project-title">Solace · Skincare</div>
+        <div class="project-description"><i class="fas fa-briefcase"></i> Rebrand tagline & manifesto</div>
+        <div class="example-box">
+          <span class="quote-icon"><i class="fas fa-quote-left"></i> tagline & excerpt</span>
+          <div class="example-text"><strong>“skin·stories”</strong> — because every line has a story.<br>“We don’t erase you. We give your skin the words it deserves. Plant‑powered, honest, unfiltered.”</div>
+        </div>
+        <div class="project-footer">
+          <span><i class="fas fa-file-lines"></i> 2024 · brand deck</span>
+          <span><i class="fas fa-star" style="color:#fbbf24;"></i> client: Solace</span>
+        </div>
+      </div>
+
+      <!-- 2. DIGITAL / landing page headline & body -->
+      <div class="project-card" data-category="digital">
+        <div class="card-category"><i class="fas fa-globe"></i> landing page</div>
+        <div class="project-title">FlowState · productivity app</div>
+        <div class="project-description"><i class="fas fa-mobile-alt"></i> Headline + microcopy</div>
+        <div class="example-box">
+          <span class="quote-icon"><i class="fas fa-quote-left"></i> above the fold</span>
+          <div class="example-text"><strong>“Your brain, but better organized.”</strong> <br>FlowState is the calm interface between your chaos and clarity. Used by 10k+ neurospicy minds.</div>
+        </div>
+        <div class="project-footer">
+          <span><i class="fas fa-calendar"></i> A/B tested · +23% signups</span>
+          <span><i class="fas fa-pen"></i> conversion copy</span>
+        </div>
+      </div>
+
+      <!-- 3. LONG-FORM / email sequence -->
+      <div class="project-card" data-category="longform">
+        <div class="card-category"><i class="fas fa-envelope-open-text"></i> email series</div>
+        <div class="project-title">The Night School · welcome flow</div>
+        <div class="project-description"><i class="fas fa-book"></i> 5‑part onboarding</div>
+        <div class="example-box">
+          <span class="quote-icon"><i class="fas fa-quote-left"></i> from email #2</span>
+          <div class="example-text"><strong>“Don’t learn to code — learn to build.”</strong> Most courses teach syntax. We teach the logic that stays with you forever. Here’s your first micro‑challenge …</div>
+        </div>
+        <div class="project-footer">
+          <span><i class="fas fa-chart-line"></i> open rate 58%</span>
+          <span><i class="fas fa-clock"></i> 4‑min read</span>
+        </div>
+      </div>
+
+      <!-- 4. SOCIAL / organic + paid -->
+      <div class="project-card" data-category="social">
+        <div class="card-category"><i class="fas fa-camera"></i> social caption</div>
+        <div class="project-title">Nomad Gear · instagram</div>
+        <div class="project-description"><i class="fas fa-hashtag"></i> carousel & caption</div>
+        <div class="example-box">
+          <span class="quote-icon"><i class="fas fa-quote-left"></i> top comment ⚡</span>
+          <div class="example-text"><strong>“Your office view is waiting.”</strong> The Nomad Daypack fits a 16” laptop, a change of clothes, and your sense of adventure. Link in bio to explore.</div>
+        </div>
+        <div class="project-footer">
+          <span><i class="fas fa-heart" style="color:#f43f5e;"></i> 2.4k likes, 140 saves</span>
+          <span><i class="fas fa-ad"></i> also used for meta ads</span>
+        </div>
+      </div>
+
+      <!-- 5. BRAND / about page (long‑form feel, but brand) -->
+      <div class="project-card" data-category="brand longform" data-multi="true">
+        <div class="card-category"><i class="fas fa-building"></i> about page</div>
+        <div class="project-title">Willow · ceramics studio</div>
+        <div class="project-description"><i class="fas fa-scroll"></i> brand story</div>
+        <div class="example-box">
+          <span class="quote-icon"><i class="fas fa-quote-left"></i> opening lines</span>
+          <div class="example-text"><strong>“We throw pots, not shade.”</strong> Willow is a tiny studio in Portland where clay meets patience. Every mug is turned, trimmed, and touched three times — never by a machine.</div>
+        </div>
+        <div class="project-footer">
+          <span><i class="fas fa-map-pin"></i> featured in Design*Sponge</span>
+          <span><i class="fas fa-hand-sparkles"></i> 2024 refresh</span>
+        </div>
+      </div>
+
+      <!-- 6. DIGITAL / push notification & ux writing -->
+      <div class="project-card" data-category="digital">
+        <div class="card-category"><i class="fas fa-bell"></i> UX microcopy</div>
+        <div class="project-title">PocketDoctor · health app</div>
+        <div class="project-description"><i class="fas fa-comment-dots"></i> push notif & error msg</div>
+        <div class="example-box">
+          <span class="quote-icon"><i class="fas fa-quote-left"></i> reminder copy</span>
+          <div class="example-text"><strong>“🧘‍♀️ Time to breathe (literally).”</strong> + error 404: “We can’t find that dose — but your next appointment is still safe.”</div>
+        </div>
+        <div class="project-footer">
+          <span><i class="fas fa-message"></i> click‑through +17%</span>
+          <span><i class="fas fa-robot"></i> friendly tone</span>
+        </div>
+      </div>
+
+      <!-- 7. LONG-FORM / article / blog intro -->
+      <div class="project-card" data-category="longform">
+        <div class="card-category"><i class="fas fa-newspaper"></i> blog / thought leadership</div>
+        <div class="project-title">Future remote · newsletter</div>
+        <div class="project-description"><i class="fas fa-quote-right"></i> long‑form intro</div>
+        <div class="example-box">
+          <span class="quote-icon"><i class="fas fa-quote-left"></i> opening paragraph</span>
+          <div class="example-text"><strong>“The 9‑to‑5 is dead — but we keep checking its pulse.”</strong> A practical guide to async communication that doesn’t feel like homework. (3,200 words, but who’s counting?)</div>
+        </div>
+        <div class="project-footer">
+          <span><i class="fas fa-stopwatch"></i> 6 min read · top 5% on Medium</span>
+          <span><i class="fas fa-pen-fancy"></i> bylined</span>
+        </div>
+      </div>
+
+      <!-- 8. SOCIAL / linkedin carousel hook -->
+      <div class="project-card" data-category="social">
+        <div class="card-category"><i class="fab fa-linkedin"></i> linkedin text</div>
+        <div class="project-title">B2B · Lead gen hook</div>
+        <div class="project-description"><i class="fas fa-chart-simple"></i> carousel intro</div>
+        <div class="example-box">
+          <span class="quote-icon"><i class="fas fa-quote-left"></i> slide 1 text</span>
+          <div class="example-text"><strong>“Three words that kill your pitch: ‘as you know’.”</strong> Most B2B copy talks to insiders. Here’s how to sound like an expert without putting everyone else to sleep. 🧵</div>
+        </div>
+        <div class="project-footer">
+          <span><i class="fas fa-share-alt"></i> 89k impressions</span>
+          <span><i class="fas fa-comment"></i> 47 comments</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- tiny no‑result placeholder (hidden by default) -->
+    <div id="noResultMsg" class="no-result" style="display: none;">
+      <i class="fas fa-filter-circle-xmark" style="font-size:2rem; margin-bottom:0.5rem; display:block;"></i>
+      No matching copy examples — but all work is mine, pick another category ✍️
+    </div>
+
+    <div class="footer-note">
+      ⚡ every project shown is <strong>my original writing</strong> · concepts & samples for real & passion brands <br>
+      <i class="fas fa-crown" style="color:#b9c7da;"></i> available for freelance · <a href="#">sam.r@copyfolio</a> · <i class="fab fa-linkedin"></i> <a href="#">/samrivera</a>
+    </div>
+  </div>
+
+  <!-- FILTERING SCRIPT (vanilla) -->
+  <script>
+    (function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.project-card');
+      const noResultDiv = document.getElementById('noResultMsg');
+      const grid = document.getElementById('projectGrid');
+
+      function filterProjects(category) {
+        let anyVisible = false;
+
+        cards.forEach(card => {
+          // get categories from data-category (may contain multiple, like "brand longform")
+          const cardCat = card.getAttribute('data-category') || '';
+          const catList = cardCat.split(' '); // in case we have e.g. "brand longform"
+
+          if (category === 'all') {
+            card.style.display = 'flex';
+            anyVisible = true;
+          } else {
+            // check if category is in the list (exact match one of the tokens)
+            if (catList.includes(category)) {
+              card.style.display = 'flex';
+              anyVisible = true;
+            } else {
+              card.style.display = 'none';
+            }
+          }
+        });
+
+        // show/hide no result message
+        if (!anyVisible && category !== 'all') {
+          noResultDiv.style.display = 'block';
+        } else {
+          noResultDiv.style.display = 'none';
+        }
+      }
+
+      // highlight active button & run filter
+      function setActiveFilter(selectedBtn, category) {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        selectedBtn.classList.add('active');
+        filterProjects(category);
+      }
+
+      // add click listeners
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          const category = this.getAttribute('data-filter');
+          setActiveFilter(this, category);
+        });
+      });
+
+      // initial: show all (active 'all' is set in html, but double-check)
+      // ensure noResult hidden on load
+      window.addEventListener('load', function() {
+        // make sure 'all' is active if any other accidental active missing
+        const activeExists = [...filterButtons].some(b => b.classList.contains('active') && b.getAttribute('data-filter') === 'all');
+        if (!activeExists) {
+          document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
+        }
+        filterProjects('all');
+      });
+    })();
+  </script>
+
+  <!-- ensure that cards with multiple categories still work (e.g. data-category="brand longform") 
+       our script splits on space, so 'brand' will match if we click brand button. good. -->
+</body>
+</html>
